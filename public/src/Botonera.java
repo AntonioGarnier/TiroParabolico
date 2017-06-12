@@ -1,15 +1,7 @@
 /**
-Practica 12: Tiro Parabolico
-Programación Gráfica.
-Programación orientada a Eventos.
-Enfatizar la orientación a objetos en el desarrollo de aplicaciones.
-Desarrollo guiado por tests (TDD).
-Graphics2D.
-Aquí se implementa la botonera del panel inferior
 @author Antonio Jesús López Garnier - Correo: alu0100454437@ull.edu.es
-@see <a href = "https://campusvirtual.ull.es/1617/user/profile.php?id=16443" > Perfil Campus Virtual ULL </a>
 @see <a href = "https://github.com/AntonioGarnier" > Mi Github </a>
-@version 3/05/2017 - 1.0
+@version 1.0
 */
 
 

@@ -1,4 +1,8 @@
-
+/**
+@author Antonio Jesús López Garnier - Correo: alu0100454437@ull.edu.es
+@see <a href = "https://github.com/AntonioGarnier" > Mi Github </a>
+@version 1.0
+*/
 
 import java.awt.Color;
 import java.util.Random;

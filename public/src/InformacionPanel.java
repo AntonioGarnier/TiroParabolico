@@ -1,7 +1,11 @@
-
+/**
+@author Antonio Jesús López Garnier - Correo: alu0100454437@ull.edu.es
+@see <a href = "https://github.com/AntonioGarnier" > Mi Github </a>
+@version 1.0
+*/
 
 import java.awt.Dimension;
-import java.awt.GridLayout;
+import java.awt.FlowLayout;
 import java.text.DecimalFormat;
 
 import javax.swing.JLabel;
@@ -17,7 +21,7 @@ public class InformacionPanel extends JPanel {
 	public InformacionPanel (int numeroTiro) {
 		setMinimumSize(new Dimension (0, 120));
 		setNumeroTiro(numeroTiro + 1);
-		setLayout(new GridLayout(1, 0));
+		setLayout(new FlowLayout());
 		initEtiquietas();
 		initPanel();
 	}
