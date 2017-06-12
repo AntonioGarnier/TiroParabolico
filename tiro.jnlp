@@ -2,22 +2,21 @@
 <jnlp
   spec="6.0+"
   codebase="https://antoniogarnier.github.io/TiroParabolico/"
-  href="ControladorTiroParabolico">
+  href="tiro.jnlp">
   <information>
     <title>Tiro Parabolico</title>
     <vendor>Antonio Garnier</vendor>
-    <homepage href="https://antoniogarnier.github.io/TiroParabolico/"/>
-    <description>TIRO PARABOLICO</description>
-    <description kind="short">Aplicación en Java que implementa una simulacion de tiro
-      parabolico>
-    </description>
   </information>
-  <security>
-      <all-permissions/>
-  </security>
   <resources>
-    <jar href="tiroParabolico.jar"/>
+      <!-- Application Resources -->
+      <j2se version="1.7+"
+            href="http://java.sun.com/products/autodl/j2se"/>
+      <jar href="public/tiroParabolico.jar" main="true" />
+
   </resources>
-  <applet-desc documentBase="https://antoniogarnier.github.io/TiroParabolico/public" main-class="ControladorTiroParabolico" name="tiro" width="800" height="600">
-  </applet-desc>
+  <application-desc
+       name="Tiro Parabolico"
+       main-class="ControladorTiroParabolico">
+   </application-desc>
+   <update check="background"/>
 </jnlp>
