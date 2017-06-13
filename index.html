@@ -4,31 +4,16 @@
       <meta charset="utf-8">
 		<meta name="author" content="Antonio Jesus Lopez Garnier">
 		<meta name="keywords" content="tiro, parabola, parabolico, applet, java, code">
+      <script src="js/copyToClipBoard.js"></script>
 
    </head>
 
    <body>
       <p> Tiro Parabólico - Applet </p>
-      <a href="https://github.com/AntonioGarnier/Applets"> Guía para la visualización de la applet </a>
-      <a href="https://antoniogarnier.github.io/TiroParabolico"> Enlace al repositorio de GitHub </a>
-      <script src=
-         "https://www.java.com/js/deployJava.js">
-      </script>
-      <script>
-      var exec = require('child_process').exec;
-      function puts (error, stdout, stderr) {
-         console.log(stdout);
-         console.log(stderr);
-         console.log(error);
-       }
-
-        // using JavaScript to get location of JNLP
-        // file relative to HTML page
-        var dir = location.href.substring(0,
-            location.href.lastIndexOf('/')+1);
-        var url = dir + "public/tiro.jnlp";
-        deployJava.createWebStartLaunchButton(exec ("javaws" + url, puts), '1.7.0');
-     </script>
+      <a href="https://github.com/AntonioGarnier/Applets"> Guía para la visualización de la applet </a><br><br>
+      <a href="https://github.com/AntonioGarnier/TiroParabolico"> Enlace al repositorio de GitHub </a><br><br>
+      <div id="comando_javaws">javaws https://antoniogarnier.github.io/TiroParabolico/public/tiro.jnlp</div>
+      <button onclick="copyToClipBoard('#comando_javaws')">Copy to Clipboard</button><br><br>
 
       <applet code="ControladorTiroParabolico"
          width="1152" height="768"
