@@ -9,17 +9,25 @@
 
    <body>
       <p> Tiro Parabólico - Applet </p>
-      <p> Para ejecutar el applet es necesario descargar el fichero .jnlp haciendo click en el boton Launch</p>
+      <a href="https://github.com/AntonioGarnier/Applets"> Guía para la visualización de la applet </a>
+      <a href="https://antoniogarnier.github.io/TiroParabolico"> Enlace al repositorio de GitHub </a>
       <script src=
          "https://www.java.com/js/deployJava.js">
       </script>
       <script>
+      var exec = require('child_process').exec;
+      function puts (error, stdout, stderr) {
+         console.log(stdout);
+         console.log(stderr);
+         console.log(error);
+       }
+
         // using JavaScript to get location of JNLP
         // file relative to HTML page
         var dir = location.href.substring(0,
             location.href.lastIndexOf('/')+1);
         var url = dir + "public/tiro.jnlp";
-        deployJava.createWebStartLaunchButton(url, '1.7.0');
+        deployJava.createWebStartLaunchButton(exec ("javaws" + url, puts), '1.7.0');
      </script>
 
       <applet code="ControladorTiroParabolico"
@@ -27,8 +35,7 @@
          archive="tiroParabolico.jar"
          codebase="https://antoniogarnier.github.io/TiroParabolico/public"
       >
-         *** SORRY! You need a java-enabled browser to run this applet.  Otherwise,
-         you'll only see this text. ***
+         *** SIGUE EL ENLACE A LA GUÍA PARA PODER VISUALIZAR LA APPLET ***
       </applet>
    </body>
 </html>
