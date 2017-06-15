@@ -4,17 +4,33 @@
       <meta charset="utf-8">
 		<meta name="author" content="Antonio Jesus Lopez Garnier">
 		<meta name="keywords" content="tiro, parabola, parabolico, applet, java, code">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
       <script src="js/copyToClipBoard.js"></script>
 
    </head>
 
    <body>
-      <p> Tiro Parabólico - Applet </p>
-      <a href="https://github.com/AntonioGarnier/Applets"> Guía para la visualización de la applet </a><br><br>
-      <a href="https://github.com/AntonioGarnier/TiroParabolico"> Enlace al repositorio de GitHub </a><br><br>
-      <div id="comando_javaws">javaws https://antoniogarnier.github.io/TiroParabolico/public/tiro.jnlp</div>
-      <button onclick="copyToClipBoard('#comando_javaws')">Copy to Clipboard</button><br><br>
+      <h1 id="titulo" class="text-center"> Tiro Parabólico </h1>
 
+      <div class="btn-group btn-group-justified">
+        <a href="https://github.com/AntonioGarnier/Applets" class="btn btn-info btn-lg">Guía para visualizar la Applet</a>
+        <a href="https://github.com/AntonioGarnier/TiroParabolico" class="btn btn-info btn-lg">Repositorio con el código</a>
+      </div>
+      <br><br>
+      <h3>Una vez completados los pasos de la <a href="https://github.com/AntonioGarnier/Applets">guía</a>:</h3>
+      <h4>
+         <ul>
+            <li>Si usas safari podrás ver la applet en esta misma página</li>
+            <li>Para otros navegadores</li>
+               <ol>
+                 <li>Abre una consola/terminal/cmd</li>
+                 <li>Utiliza el comando $javaws</li>
+                 <li>Seguido del enlace al fichero .jnlp: <p id="comando_javaws">javaws https://antoniogarnier.github.io/TiroParabolico/public/tiro.jnlp</p></li>
+                 <li><button id="botonCopia" onclick="copyToClipBoard('comando_javaws')">Copiar comando</button></li>
+               </ol>
+         </ul>
+      </h4>
       <applet code="ControladorTiroParabolico"
          width="1152" height="768"
          archive="tiroParabolico.jar"
