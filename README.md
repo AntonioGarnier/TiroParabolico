@@ -4,7 +4,7 @@
    el vector de posición y el rastro o parábola. Contiene un panel de información donde se muestra la distancia
    y altura máxima y actual del objeto.
 
-   ![imagen applet](images/tiroParabolico.png)
+   ![imagen applet](view/images/tiroParabolico.png)
 
 ## [Guía para visualizar la Applet](https://github.com/AntonioGarnier/Applets)
 
